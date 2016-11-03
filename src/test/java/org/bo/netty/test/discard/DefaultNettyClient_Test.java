@@ -12,10 +12,8 @@ public class DefaultNettyClient_Test {
 		DefaultNettyClient dnc = new DefaultNettyClient();
 		dnc.run(nc);
 		for (int i = 0; i < 10; i++) {
-			dnc.sendMessage("\n=***#$$#$#$$==" + i);
+			dnc.sendMessage("\n****" + i);
 		}
 		dnc.stop();
-		//dnc.sendMessage("xx");
-		//dnc.sendMessage("QQ");
 	}
 }
